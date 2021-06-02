@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/anderson/IdeaProjects/Challenge">
+        <classes>
+            <class name="com.challenge.qa.TestCases.someTest">
+                <methods>
+                    <include name="verifyThereAreNoItems"/>
+                    <include name="allFieldsAreRequired"/>
+                    <include name="verifyURL"/>
+                    <include name="verifyAppName"/>
+                    <include name="createAndDeleteAppointment"/>
+                    <include name="createRepeatAppointment"/>
+                    <include name="specialCharacters"/>
+                    <include name="checkTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+</suite>
